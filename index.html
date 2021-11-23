@@ -44,20 +44,27 @@
             /* Put in front of all other elements to prevent interaction */
             z-index: 1;
 
+            /* Absolute position lets us cover the screen regardless of scroll position */
             position: absolute;
+
+            /* Make it cover the entire screen using left+top plus width+height */
             left: 0;
             top: 0;
             width: 100vw;
             height: 100vh;
-            background-color: rgba(0, 0, 0, 0.5);
 
             /* Prevent scrollbar during animation */
             overflow: hidden;
+
+            /* Transparent background color (overlay) */
+            background-color: rgba(0, 0, 0, 0.5);
         }
 
         #popup-box {
             text-align: center;
             z-index: 2;
+
+            /* Same positioning strategy, but should only take up center part of the screen */
             position: absolute;
             left: 50%;
             top: 50%;
@@ -68,6 +75,7 @@
             border-radius: 20px;
             padding: 20px;
 
+            /* animation should use our "slide-up" and take 1/5 of a second */
             animation: slide-up 0.2s ease-in;
 
         }
@@ -100,7 +108,13 @@
          */ 
         class Popup {
             static open() {
-                //don't open if already open
+                /**
+                 * Don't open if already open
+                 * NOTE: we might not have assigned the variable before,
+                 *   but the way we use it in the if condition, 
+                 *   it will be treated as false if we didn't set it before
+                 *   so all good
+                 */
                 if (Popup.isOpen) {
                     console.warn("Popup is already open!");
                     return;
@@ -123,7 +137,13 @@
             }
 
             static close() {
-                //don't close if not already open
+                /**
+                 * Don't close if not already open
+                 * NOTE: we might not have assigned the variable before,
+                 *   but the way we use it in the if condition, 
+                 *   it will be treated as not false (true) if we didn't set it before
+                 *   so all good
+                 */
                 if (!Popup.isOpen) {
                     console.warn("Can't close Popup because it's not open!");
                     return;
@@ -171,7 +191,7 @@
                     without using any JavaScript!
                 </p>
                 <p id="like-p">
-                    Don't forget to like and subscribe!
+                    Don't forget to follow us on social media!
                 </p>
                 <button id="popup-ok">Ok!</button>
             </div>
