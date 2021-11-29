@@ -1,5 +1,7 @@
 # simple-popup-box
-This is an example of a basic popup box which opens and closes on a button click. The contents are static here but the code can be enhanced to use dynamic messages. The sections below will outline a walkthrough of the process used to create this index.html.
+This is an example of a basic popup box which opens and closes on a button click. The contents are static here but the code can be enhanced to use dynamic messages. The sections below will outline a walkthrough of the process used to create this index.html. Feel free to also check out:
+* Our [YouTube Video](https://www.youtube.com/watch?v=EGNRVStdtEw), where we code this in real time with music.
+* Our [Dev Page](https://bytethisstore.com/articles/pg/simple-popup), where we cover this topic in more detail.
 
 ## Popup Box Requirements
 We're going to create a fairly simple & straightforward popup box, but before getting into the code, let's explicitly outline the desired behavior of the popup box:
