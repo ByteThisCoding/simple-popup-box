@@ -3,6 +3,9 @@ This is an example of a basic popup box which opens and closes on a button click
 * Our [YouTube Video](https://www.youtube.com/watch?v=EGNRVStdtEw), where we code this in real time with music.
 * Our [Dev Page](https://bytethisstore.com/articles/pg/simple-popup), where we cover this topic in more detail.
 
+## Demo the Live Example
+The live example can be viewed in action on [this page](https://htmlpreview.github.io/?https://github.com/ByteThisStore/simple-popup-box/blob/main/index.html).
+
 ## Popup Box Requirements
 We're going to create a fairly simple & straightforward popup box, but before getting into the code, let's explicitly outline the desired behavior of the popup box:
 * It should be hidden by default.
